@@ -1,0 +1,274 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px;
+}
+
+/* GALERIE */
+.galerie {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-galerie {
+  max-width: 600px;
+}
+
+.galerie p {
+  max-width: 600px;
+}
+
+/* MENU NAVIGATION GENERAL*/
+
+#menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  padding: 0;
+  background-color: white;
+  z-index: 3;
+  position: relative;
+}
+
+#menu li {
+  background: none;
+  color: #fff;
+  border: none;
+}
+
+#menu li a {
+  background: none;
+  color: #b6b6b6;
+  font: 1em 'Trebuchet MS', Arial, sans-serif;
+  line-height: 1em;
+  text-align: center;
+  text-decoration: none;
+  padding: 2px 25px 2px 25px;
+  border: none;
+}
+
+#menu li a:hover {
+  background: none;
+  text-decoration: none;
+  color: gray;
+}
+
+#menu li a:focus,
+#menu li a:active {
+  background: none;
+}
+
+span.clic-menu {
+  color: gray;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*SOUS MENU */
+
+.sous-menu {
+  list-style: none;
+  z-index: 2;
+  position: relative;
+  background-color: white;
+  padding: 0;
+  margin: 0 50px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.sous-menu li {
+  background: none;
+  color: gray;
+  border: none;
+}
+
+.sous-menu li a {
+  display: block;
+  background: none;
+  color: #b6b6b6;
+  font: 1em 'Trebuchet MS', Arial, sans-serif;
+  line-height: 1em;
+  text-align: left;
+  text-decoration: none;
+  padding: 10px 5px 10px 5px;
+}
+
+.sous-menu li a:hover {
+  background: none;
+  text-decoration: none;
+  color: gray;
+}
+
+/* TITRES*/
+
+h1 {
+  font-family: arial, verdana, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: medium;
+  text-align: center;
+  letter-spacing: 0.05em;
+  line-height: 30%;
+  color: gray;
+}
+
+h2 {
+  font-family: arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  line-height: 160%;
+  background: none;
+  position: relative;
+}
+
+.titre {
+  color: gray;
+  text-decoration: none;
+}
+
+/* TEXTES*/
+
+p {
+  font-family: arial, verdana, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: small;
+  text-indent: 0%;
+  letter-spacing: 0.1em;
+  text-align: center;
+  line-height: 2em;
+  color: #b6b6b6;
+  background: none;
+}
+
+/* PIED DE PAGE*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+footer hr {
+  margin: 5px;
+}
+
+.p2 {
+  font-family: arial, verdana, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: small;
+  color: #b6b6b6;
+  text-indent: 0%;
+  letter-spacing: 0.1em;
+  text-align: justify;
+  line-height: 1.7em;
+}
+
+/*PAGE BIOGRAPHIE*/
+
+.biographie-page h1 {
+  text-align: center;
+  color: #b6b6b6;
+  z-index: 1;
+}
+
+.biographie-page section p {
+  text-align: justify;
+  color: #b6b6b6;
+  margin: 0 20px;
+  width: 300px;
+  z-index: 1;
+}
+
+/*PAGE LIENS*/
+
+p.liens {
+  text-align: left;
+  color: #b6b6b6;
+  margin: 0 100px;
+}
+
+p.p2liens {
+  font-family: arial, verdana, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: small;
+  color: #b6b6b6;
+  text-indent: 0%;
+  letter-spacing: 0.1em;
+  text-align: justify;
+  line-height: 1.7em;
+}
+
+/* LIENS*/
+a {
+  color: gray;
+}
+
+a:link {
+  color: gray;
+}
+
+a:visited {
+  color: gray;
+  font-weight: bold;
+}
+
+a:hover {
+  color: gray;
+  font-style: italic;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 700px) {
+  #menu {
+    flex-direction: column;
+  }
+
+  #menu li a {
+    padding: 5px 0px;
+  }
+
+  .content {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sous-menu {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .image-galerie {
+    max-width: 300px;
+  }
+
+  footer {
+    margin: 0;
+  }
+}
